@@ -24,6 +24,15 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    overflow: hidden;
+}
+
+.default-line-color {
+  background: theme("colors.system.purple50");
+}
+
+.change-line-color {
+  background: theme("colors.system.green60");
 }
 
 @layer utilities {
