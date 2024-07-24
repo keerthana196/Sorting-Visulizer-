@@ -23,7 +23,7 @@ interface SortingAlgorithmContextType{   //obj
 const SortingAlgorithmContext = createContext<SortingAlgorithmContextType | undefined>(undefined)
 
 export const SortingAlgorithmProvider = ({children}:{children: React.ReactNode}) =>{
-    const[arrayToSort,setArrayToSort] = useState<number[]>([100,21,34,55,22,75,10,120,334,222,5,123,4,211]); // arr of elements
+    const[arrayToSort,setArrayToSort] = useState<number[]>([]); // arr of elements
     const[selectedAlgorithm,setSelectedAlgorithm]  = useState<SortingAlgorithmType>("bubble")
     const[isSorting,setIsSorting] = useState<boolean>(false);
     const[isAnimationComplete,setIsAnimationComplete] = useState<boolean>(false);
